@@ -1,0 +1,158 @@
+@import 'antd/dist/antd.css';
+
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("/src/Assets/Font/Helvetica/Helvetica.ttf")
+}
+
+
+body,
+#root,
+.App,
+.main,
+.EventDisplay {
+    min-height: 100vh;
+}
+
+.App {
+    background: linear-gradient(0deg, #F6F2FF, #F6F2FF), #FBFAFF;
+    font-family: "Helvetica";
+}
+
+.fs-64 {
+    font-size: 64px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fc-Blue {
+    color: #240D57;
+}
+
+.fc-Grey {
+    color: #4F4F4F;
+}
+
+.fc-lg-Grey {
+    color: #828282
+}
+
+.fc-lg-Grey-2 {
+    color: #BDBDBD
+}
+
+.fc-grad-Blue {
+
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fc-Pink {
+    color: #E87BF8
+}
+
+.bg-Purple {
+    background-color: #8456EC !important;
+}
+
+
+.ant-space-vertical {
+    width: 100%;
+}
+
+.ant-picker-range {
+    padding: 16px 11px;
+    width: 100%;
+}
+
+.lh-64 {
+    line-height: 64px;
+}
+
+.lh-73 {
+    line-height: 73.59px;
+}
+
+
+.btn_Create {
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    border: 0px;
+    width: clamp(200px, 30ch, 100%);
+    padding: 16px 0px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.ReqFeild {
+    display: inline-block !important;
+    height: 0 !important;
+    border: 0px !important;
+    z-index: -1 !important;
+    position: absolute !important;
+    outline: none !important;
+    opacity: 0;
+    top: 31px;
+    left: 83px;
+    width: 48px;
+}
+
+
+.Icon_box {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .fs-64 {
+        font-size: 36px
+    }
+
+    .fs-48 {
+        font-size: 24px
+    }
+
+    .fs-24 {
+        font-size: 16px
+    }
+
+
+    .fs-18 {
+        font-size: 14px;
+    }
+
+
+
+    .lh-64 {
+        line-height: 36px
+    }
+
+    .lh-73 {
+        line-height: 41px
+    }
+}

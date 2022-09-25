@@ -1,0 +1,15 @@
+.EventImg,
+.txtPart {
+    max-width: 100%;
+}
+
+.btn_Create {
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    border: 0px;
+    width: clamp(200px, 30ch, 100%);
+    padding: 16px 0px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
