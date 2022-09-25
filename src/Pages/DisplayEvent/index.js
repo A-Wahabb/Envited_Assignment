@@ -36,6 +36,11 @@ const DisplayEvent = () => {
 
     }, [])
 
+    const removeAll = () => {
+        localStorage.clear()
+        history('/Create')
+    }
+
     const ReturnDate = (e) => {
         let formtDate = new Date(Date.parse(e))
         console.log({ formtDate, e })
@@ -77,14 +82,14 @@ const DisplayEvent = () => {
                                         <img src={Arrow} alt="" />
                                     </div>
                                 </div>
-                                <div clasName="row">
-                                    <div className="col-12 col-md-6">
+                                <div className="row">
+                                    <div className="col-12 col-md-6 mt-3">
 
-                                        <button type="button" onClick={() => { localStorage.clear(); history('/Create') }} className="btn_Create">Add Event</button>
+                                        <button type="button" onClick={removeAll} className="w-100 btn_Create">Remove Event</button>
                                     </div>
-                                    <div className="col-12 col-md-6">
+                                    <div className="col-12 col-md-6 mt-3">
 
-                                        <button type="button" onClick={history('/Create')} className="btn_Create">Edit Event</button>
+                                        <button type="button" onClick={() => history('/Create')} className="w-100 btn_Create">Edit Event</button>
 
                                     </div>
                                 </div>
