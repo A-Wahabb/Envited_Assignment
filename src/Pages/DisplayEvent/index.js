@@ -2,7 +2,12 @@ import { useEffect, useState } from "react"
 import location from "../../Assets/Images/Location.png"
 import calender from "../../Assets/Images/Calender.png"
 import Arrow from "../../Assets/Images/Arrow.png"
+import { message } from "antd"
+import { useNavigate } from 'react-router-dom'
+
+
 const DisplayEvent = () => {
+    const history = useNavigate();
 
     const [NewEvent, setNewEvent] = useState({
         eventName: "",
@@ -21,6 +26,10 @@ const DisplayEvent = () => {
 
             setNewEvent(AllreadyAdded)
 
+        }
+        else {
+            message.error('Kindly add Event First')
+            history('/Create')
         }
 
 
