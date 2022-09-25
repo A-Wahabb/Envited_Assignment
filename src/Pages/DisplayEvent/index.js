@@ -77,6 +77,17 @@ const DisplayEvent = () => {
                                         <img src={Arrow} alt="" />
                                     </div>
                                 </div>
+                                <div clasName="row">
+                                    <div className="col-12 col-md-6">
+
+                                        <button type="button" onClick={() => { localStorage.clear(); history('/Create') }} className="btn_Create">Add Event</button>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+
+                                        <button type="button" onClick={history('/Create')} className="btn_Create">Edit Event</button>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 px-0 px-md-3">
